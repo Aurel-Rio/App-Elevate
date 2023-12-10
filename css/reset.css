@@ -1,0 +1,41 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* Style général du corps de la page */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: rgba(0, 0, 0); /* Couleur noire avec une opacité de 0.7 */
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+ /* background-image: url('../assets/bg/bg04.png');
+  background-size: auto 70vh; /* La hauteur de l'image est maintenant de 70% de la hauteur de l'écran *//*
+  background-repeat: no-repeat; 
+  background-position: left center; 
+  transition: transform 0.3s ease-in-out; */
+}
+
+
+
+
+
+@keyframes mon-animation {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+
+header,
+footer, 
+form {
+animation-name: mon-animation;
+animation-duration: 1s;
+animation-fill-mode: both;
+}
